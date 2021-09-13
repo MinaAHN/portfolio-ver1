@@ -1,0 +1,79 @@
+// Mobile
+
+.landing {
+  &-button {
+    display: block;
+    text-align: right;
+  }
+
+  &-user {
+    background-image: url(assets/hyemin-pic.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 44px;
+  }
+
+  &-content {
+    text-align: center;
+
+    h1 {
+      @include text-style(32);
+      font-weight: 700;
+      margin-bottom: 21px;
+    }
+
+    p {
+      margin-bottom: 27px;
+    }
+
+    button {
+      @include flexbox;
+      @include text-style(20);
+      display: inline-flex;
+      padding: 0 20px;
+      border-radius: 4px;
+      color: $white;
+      height: 48px;
+      font-weight: 700;
+      background-color: $red;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &-list {
+      @include flexbox(end, center);
+      padding: 10px;
+      margin-bottom: 150px;
+    }
+
+    &-item {
+      @include text-style(20);
+      font-weight: 500;
+      margin-right: 30px;
+    }
+
+    &-user {
+      width: 250px;
+      height: 250px;
+      margin-bottom: 0;
+    }
+
+    &-content {
+      text-align: start;
+
+      h1 {
+        @include text-style(44);
+        margin-bottom: 40px;
+      }
+
+      p {
+        margin-bottom: 38px;
+      }
+    }
+  }
+}
