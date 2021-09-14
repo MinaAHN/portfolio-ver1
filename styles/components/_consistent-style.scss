@@ -1,0 +1,15 @@
+.section-category {
+  @include text-style(18);
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-category {
+    @include text-style(22);
+    text-align: start;
+    margin-bottom: 0;
+  }
+}

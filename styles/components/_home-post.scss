@@ -1,0 +1,76 @@
+// MOBILE
+
+.home-post {
+  padding: 20px 0;
+  background-color: $blue;
+}
+
+.col-md-6:first-child {
+  margin-bottom: 30px;
+}
+
+.post {
+  &-box {
+    display: block;
+    background-color: $white;
+    padding: 15px;
+    border: 8px;
+    margin: 0 auto;
+
+    h2 {
+      @include text-style(22);
+      margin-bottom: 12px;
+    }
+
+    &-info {
+      @include flexbox(start);
+      margin-bottom: 20px;
+
+      span,
+      img {
+        margin-right: 20px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+// DESKTOP
+
+@media screen and (min-width: 768px) {
+  .home-post {
+    padding: 40px 150px;
+  }
+
+  .col-md-6:first-child {
+    margin-bottom: 0;
+  }
+
+  .post {
+    &-header {
+      @include flexbox(between);
+      margin-bottom: 20px;
+
+      span {
+        color: $green;
+      }
+    }
+
+    &-box {
+      padding: 25px;
+
+      h2 {
+        @include text-style(26);
+        margin-bottom: 30px;
+      }
+
+      &-info {
+        @include text-style(18);
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
