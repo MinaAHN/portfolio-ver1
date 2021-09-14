@@ -2,8 +2,9 @@
 
 .landing {
   &-button {
-    display: block;
-    text-align: right;
+    @include flexbox(end);
+    padding: 15px 0;
+    margin-bottom: 10px;
   }
 
   &-user {
@@ -15,7 +16,7 @@
     height: 170px;
     border-radius: 50%;
     margin: 0 auto;
-    margin-bottom: 44px;
+    margin-bottom: 15px;
   }
 
   &-content {
@@ -24,11 +25,11 @@
     h1 {
       @include text-style(32);
       font-weight: 700;
-      margin-bottom: 21px;
+      margin-bottom: 15px;
     }
 
     p {
-      margin-bottom: 27px;
+      margin-bottom: 20px;
     }
 
     button {
@@ -43,12 +44,15 @@
       background-color: $red;
       cursor: pointer;
       transition: opacity 200ms ease-in-out;
+      margin-bottom: 30px;
 
       &:hover {
         opacity: 0.9;
       }
     }
   }
+
+  // DESKTOP
 
   @media screen and (min-width: 768px) {
     &-list {
