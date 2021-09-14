@@ -1,10 +1,12 @@
 // Mobile
+.home-landing {
+  padding: 20px 0;
+}
 
 .landing {
   &-button {
     @include flexbox(end);
-    padding: 15px 0;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   &-user {
@@ -16,7 +18,7 @@
     height: 170px;
     border-radius: 50%;
     margin: 0 auto;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   &-content {
@@ -25,11 +27,11 @@
     h1 {
       @include text-style(32);
       font-weight: 700;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
 
     p {
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
 
     button {
@@ -44,27 +46,34 @@
       background-color: $red;
       cursor: pointer;
       transition: opacity 200ms ease-in-out;
-      margin-bottom: 30px;
 
       &:hover {
         opacity: 0.9;
       }
     }
   }
+}
 
-  // DESKTOP
+// DESKTOP
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .home-landing {
+    padding: 20px 0 100px;
+  }
+  .landing {
     &-list {
       @include flexbox(end, center);
-      padding: 10px;
-      margin-bottom: 150px;
+      margin-bottom: 160px;
     }
 
     &-item {
       @include text-style(20);
       font-weight: 500;
       margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
 
     &-user {

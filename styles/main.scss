@@ -1,7 +1,6 @@
 @import './constants/colors';
 @import './constants/typography.scss';
 
-@import './base/fonts';
 @import './base/normalize';
 @import './base/reset';
 @import './base/globals';
@@ -12,6 +11,6 @@
 
 @import './layouts/grids';
 
-@import './modules/icons';
-
 @import './components/home-landing';
+@import './components/home-post';
+@import './components/consistent-style';
