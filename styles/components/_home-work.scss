@@ -1,0 +1,48 @@
+.home-work {
+  padding: 20px 0;
+}
+
+.work {
+  &-img {
+    display: block;
+    padding: 0 20px;
+    margin-bottom: 17px;
+
+    img {
+      width: 100%;
+      min-width: 200px;
+      height: auto;
+    }
+  }
+
+  &-content {
+    h1 {
+      @include text-style(24);
+      margin-bottom: 16px;
+    }
+
+    span {
+      display: block;
+      color: $white;
+      font-weight: 700;
+      background-color: $dark;
+      max-width: 48px;
+      padding: 2px 4px;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home-work {
+    padding: 40px 30px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .home-work {
+    padding: 40px 150px;
+  }
+}

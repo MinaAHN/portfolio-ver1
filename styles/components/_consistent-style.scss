@@ -12,4 +12,13 @@
     text-align: start;
     margin-bottom: 0;
   }
+
+  .home-content-header {
+    @include flexbox(between);
+    margin-bottom: 20px;
+
+    span {
+      color: $green;
+    }
+  }
 }
