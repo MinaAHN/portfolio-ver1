@@ -1,5 +1,14 @@
 .home-work {
   padding: 20px 0;
+  background-color: $background;
+
+  .row {
+    margin-bottom: 20px;
+
+    &:first-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .work {
@@ -38,6 +47,22 @@
 @media screen and (min-width: 768px) {
   .home-work {
     padding: 40px 30px;
+  }
+  .work {
+    &-img {
+      margin-bottom: 0;
+    }
+
+    &-content {
+      h1 {
+        @include text-style(30);
+        margin-bottom: 20px;
+      }
+
+      span {
+        margin-bottom: 20px;
+      }
+    }
   }
 }
 
