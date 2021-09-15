@@ -1,0 +1,17 @@
+.home-footer {
+  padding: 50px 0;
+}
+
+.footer {
+  &-links {
+    @include flexbox;
+  }
+
+  &-link {
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
